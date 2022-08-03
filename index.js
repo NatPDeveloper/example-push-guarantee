@@ -59,4 +59,5 @@ const postTransaction = async (endpoint, body) => {
     const res = await postTransaction(`${nodeosEndpoint}/v1/chain/send_transaction2`,body);
     const resJson = await res.json()
     console.log('response',resJson);
+    // console.log('action_traces',resJson.processed.action_traces);
 })();
