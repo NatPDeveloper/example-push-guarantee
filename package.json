@@ -1,0 +1,29 @@
+{
+    "name": "example-push-guarantee",
+    "version": "1.0.0",
+    "description": "using mandel's new push guarantee feature",
+    "main": "index.js",
+    "scripts": {
+      "test": "node index.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/NatPDeveloper/example-push-guarantee.git"
+    },
+    "keywords": [
+      "eosio",
+      "nodeos",
+      "eosjs"
+    ],
+    "author": "NatPDeveloper",
+    "license": "MIT",
+    "dependencies": {
+      "eosjs": "^22.1.0",
+      "node-fetch": "^2.6.7"
+    },
+    "bugs": {
+      "url": "https://github.com/NatPDeveloper/example-push-guarantee/issues"
+    },
+    "homepage": "https://github.com/NatPDeveloper/example-push-guarantee#readme"
+  }
+  
