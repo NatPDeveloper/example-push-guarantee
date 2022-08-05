@@ -16,13 +16,6 @@ const arrayToHex = (data) => {
     return result;
 };
 
-const postTransaction = async (endpoint, body) => {
-    return await fetch(endpoint, {
-        body: JSON.stringify(body),
-        method: 'POST'
-    });
-}
-
 (async () => {
     const result = await api.transact({
     actions: [{
@@ -56,8 +49,7 @@ const postTransaction = async (endpoint, body) => {
         retry_trx_num_blocks: 60
     }
     console.log('body',body);
-    const res = await postTransaction(`${nodeosEndpoint}/v1/chain/send_transaction2`,body);
-    const resJson = await res.json()
-    console.log('response',resJson);
+    const res = await rpc.fetch(`/v1/chain/send_transaction2`,body)
+    console.log('response',res);
     // console.log('action_traces',resJson.processed.action_traces);
 })();
