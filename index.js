@@ -49,7 +49,7 @@ const arrayToHex = (data) => {
         retry_trx_num_blocks: 60
     }
     console.log('body',body);
-    const res = await rpc.fetch(`/v1/chain/send_transaction2`,body)
+    const res = await rpc.fetch(`/v1/chain/send_transaction2`,body);
     console.log('response',res);
-    // console.log('action_traces',resJson.processed.action_traces);
+    // console.log('action_traces',res.processed.action_traces);
 })();
